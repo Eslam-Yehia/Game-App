@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game App</title>
+    <link rel="shortcut icon" href="./images/logo-sm.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/animate.css" />
+  </head>
+  <body class="text-light body-bg">
+    <!-- reload -->
+    <div
+      class="d-none position-relative loading position-fixed top-0 start-0 w-100 min-vh-100"
+    >
+      <div
+        class="d-flex justify-content-center align-items-center w-100 min-vh-100"
+      >
+        <span class="loading-spinner"></span>
+      </div>
+      <div
+        class="d-flex justify-content-center align-items-center w-100 vh-100 position-absolute top-50 start-50 translate-middle"
+      >
+        <span class="reverse-loading-spinner"></span>
+      </div>
+    </div>
+    <section class="home align-self-stretch">
+      <!-- hero -->
+      <div>
+        <img src="./images/wraper.png" class="w-100 hero" alt="" />
+      </div>
+      <!-- nav -->
+      <nav
+        class="navbar position-sticky top-0 z-3 navbar-expand-lg blue-bg-color rounded-4 mx-auto col-md-6 col-lg-9"
+      >
+        <div class="container">
+          <h2 class="fw-medium navbar-brand mb-0 text-light">
+            <img src="./images/logo-sm.png" alt="" />
+            GAME REVIEWS
+          </h2>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" data-category="mmorpg">MMORPG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="shooter">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="sailing">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="permadeath">PERMADEATH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="superhero">SUPERHERO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="pixel">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- game cards -->
+      <div class="pt-5 ps-3">
+        <div class="container">
+          <div class="row g-4 cards-container" id="htmlContainer"></div>
+        </div>
+      </div>
+    </section>
+    <!-- details -->
+    <section id="detailsContainer" class="d-none pb-3">
+      <div class="container">
+        <div class="d-flex py-4 justify-content-between align-items-center">
+          <h1 class="">Details Game</h1>
+          <button class="btn-close btn-close-white" id="closeBtn"></button>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img id="gameImg" src="" alt="" class="w-100 rounded-2" />
+          </div>
+          <div class="col-md-8">
+            <h3 class="h2">Title:<span id="gameTitle" class="ms-2"></span></h3>
+            <h3 class="h5 fw-bolder my-3">
+              Category:
+              <span id="GameCategory" class="badge text-bg-info"></span>
+            </h3>
+            <h3 class="h5 fw-bolder my-3">
+              Platform:
+              <span id="GamePlatform" class="badge text-bg-info"></span>
+            </h3>
+            <h3 class="h5 fw-bolder my-3">
+              Status:
+              <span id="GameStatus" class="badge text-bg-info"></span>
+            </h3>
+            <p id="gameDesc"></p>
+            <a
+              href=""
+              target="_blank"
+              id="gameBtn"
+              class="btn btn-outline-warning text-light"
+              >Show Game</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+* {
+  user-select: none;
+}
+h1,
+h2 {
+  font-family: "Nerko One", cursive;
+}
+p,
+span,
+a,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Comic Neue", cursive;
+}
+body {
+  background-color: #0d0d0d;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #32383e;
+}
+body::-webkit-scrollbar-thumb {
+  background: #25292e;
+  border-radius: 10px;
+  transition: 400ms all;
+  -webkit-transition: 400ms all;
+  -moz-transition: 400ms all;
+  -ms-transition: 400ms all;
+  -o-transition: 400ms all;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #131517;
+  border-radius: 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.loading {
+  z-index: 100;
+  display: block;
+  background-color: #272b30;
+}
+.loading-spinner {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 5px solid #fff;
+  border-right: 5px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  -webkit-animation: rotation 1s linear infinite;
+}
+.reverse-loading-spinner {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: inline-block;
+  border-left: 5px solid #e21c1c;
+  border-bottom: 5px solid transparent;
+  box-sizing: border-box;
+  animation: reverse-rotation 1s linear infinite;
+  -webkit-animation: reverse-rotation 1s linear infinite;
+}
+
+.hero {
+  max-height: 30vh;
+}
+.hero img {
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+nav {
+  margin-top: -30px;
+  box-shadow: 0 0 10px 5px #0005;
+}
+.navbar-brand img {
+  width: 35px;
+}
+.navbar-brand {
+  --bs-navbar-brand-font-size: 1.7rem;
+  font-weight: 400 !important;
+}
+.nav-content-list {
+  min-height: 1px;
+}
+.nav-item .nav-link {
+  color: inherit !important;
+  font-size: 14px;
+  cursor: pointer;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: #09c !important;
+  transition: color 0.5s;
+}
+
+.warning {
+  border-color: red !important;
+}
+
+.gray-color {
+  color: #939597;
+}
+.blue-bg-color {
+  background-color: #3a497b;
+}
+.body-bg {
+  background-color: #272b30;
+}
+.dark-bg-color {
+  background-color: #32383e;
+}
+
+.card-container {
+  height: 100%;
+  filter: grayscale(80%);
+  -webkit-filter: grayscale(80%);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.card-container:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  scale: 1.05;
+}
+
+.card-inner {
+  flex: 1 1 auto;
+}
